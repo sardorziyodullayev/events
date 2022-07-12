@@ -1,0 +1,107 @@
+.service__heading {
+  padding: 110px 0 205px 0;
+  font-family: "Circe", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 83px;
+  color: #000000;
+}
+.service__item {
+  margin-bottom: 127px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.service__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.service__inner {
+  width: 560px;
+}
+.service__span {
+  padding: 16px 21px;
+  background-color: #563aff;
+  border-radius: 10px;
+}
+.service__title {
+  padding: 20px 0 25px 0;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 117.9%;
+  color: #000000;
+}
+.service__text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 135%;
+  color: #000000;
+}
+.service__text + .service__text {
+  padding-bottom: 72px;
+  margin-top: 40px;
+}
+.service__link {
+  padding: 18px 36px;
+  background-color: #3ab9f0;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 135%;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+}
+.service__img{
+    border-radius: 10px;
+}
+@media only screen and (max-width: 1000px) {
+  .service__heading {
+    padding: 45px 0 36px 0;
+    font-size: 35px;
+    line-height: 52px;
+  }
+  .service__img {
+    width: 295px;
+    height: 430px;
+    object-fit: cover;
+  }
+  .service__span {
+    padding: 5px 10px;
+  }
+  .service__title {
+    padding: 17px 0 17px 0;
+    font-size: 25px;
+  }
+  .service__text {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 850px){
+    .service__item{
+        align-items: flex-start;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .service__inner{
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+    .service__item:nth-child(even) {
+        align-items: flex-start;
+        margin: 0 auto;
+        flex-direction: column;
+      }
+}
+@media only screen and (max-width: 590px){
+    .service__img {
+        width: 300px;
+        height: 182px;
+        object-fit: cover;
+      }
+    .service__inner{
+        max-width: 400px;
+    }
+}

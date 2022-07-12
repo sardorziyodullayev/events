@@ -1,0 +1,122 @@
+.main__hero {
+  background-color: #3a5aff;
+}
+.hero{
+  position: relative;
+  overflow-x: hidden;
+}
+.hero::before {
+  width: 1160px;
+  height: 700px;
+  top: 165px;
+  left: calc(50% + 600px);
+  content: "";
+  position: absolute;
+  background-image: url(../../image/bg.png), url(../../image/vector-right.svg);
+  background-repeat: no-repeat;
+  background-size: 100%, 38px 24px;
+  background-position: 0, left;
+}
+.hero::after {
+  position: absolute;
+  width: 1160px;
+  height: 700px;
+  top: 165px;
+  left: calc(50% - 1760px);
+  content: "";
+  right: -20px;
+  background-image: url(../../image/hero-right.png), url(../../image/Vector-left.svg);
+  background-repeat: no-repeat;
+  background-size: 100%, 38px 24px;
+  background-position: 0, right;
+}
+.hero__content {
+  padding: 74px 0 62px 0;
+}
+.hero__content-title {
+  padding: 0 0 46px 0;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+.hero__inner {
+  padding: 105px 0 103px 46px;
+  background-image: url(../../image/chassis-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.hero__inner-heading {
+  padding: 105px 0 103px 46px;
+  max-width: 600px;
+  text-align: start;
+}
+.hero__inner-title {
+  font-weight: 800;
+  font-size: 41px;
+  line-height: 114.1%;
+  color: #ffffff;
+}
+.hero__inner-text {
+  padding: 10px 0 39px 0;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 134%;
+  color: #ffffff;
+}
+.hero__inner-link {
+  padding: 12px 42px;
+  background: #3ab9f0;
+  color: #fff;
+  border-radius: 7px;
+  text-decoration: none;
+}
+.hero__inner-link:hover{
+  background-color: #3a5aff;
+}
+@media only screen and (max-width: 1100px){
+  .hero__content-title{
+    font-size: 35px;
+    line-height: 80%;
+  }
+  .hero__inner {
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 950px){
+  .hero__content {
+    padding: 60px 0 52px 0;
+  }
+  .hero__inner-title {
+    font-weight: 600;
+    font-size: 35px;
+  }
+  .hero__inner-text {
+    font-size: 18px;
+    line-height: 110%;
+  }
+}
+@media only screen and (max-width: 670px){
+  .hero__content-title{
+    font-size: 30px;
+  }
+  .hero__inner-title {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .hero__inner-text {
+    font-size: 14px;
+    line-height: 110%;
+  }
+}
+@media only screen and (max-width: 560px){
+  .hero__content-title{
+    display: none;
+  }
+  .hero__inner-heading{
+    padding: 85px 26px 83px 26px;
+    text-align: center;
+  }
+}
